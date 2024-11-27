@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos Registrados</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Gastos Registrados</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Cuenta</th>
+                <th>Concepto</th>
+                <th>Etiqueta</th>
+                <th>Descripción</th>
+                <th>Total</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-gastos">
+           
+        </tbody>
+    </table>
+
+    <a href="add-gastos.html"><button>Agregar Gasto</button></a>
+    <button id="mostrar-grafica">Mostrar Gráfica</button>
+
+    <div id="grafica-container" style="display: none;">
+        <canvas id="gastosChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+
+
